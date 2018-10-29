@@ -3316,4 +3316,4 @@ client.on('message',async message => {
     }
   });
 	
- client.login("NTAyOTI3OTIzMTcxNDI2MzA2.DqvElQ.cO5XMYCnLz09_xJzVRUtybp3qsU");
+client.login(process.env.BOT_TOKEN);

@@ -3318,7 +3318,7 @@ client.on('message',async message => {
 
 const Canvas = require('canvas');
 
-bot.on('guildMemberAdd', member => {
+
       const welcomer =  member.guild.channels.find('name', 'welcome');
       var Canvas = require('canvas')
       var jimp = require('jimp')

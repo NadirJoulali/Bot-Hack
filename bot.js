@@ -7,7 +7,7 @@ const jimp = require('jimp');
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Comming Soon V2.1`,"http://twitch.tv/Nadir44king")
+client.user.setGame(`-Help || -Invite V2.1`,"http://twitch.tv/Nadir44king")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -98,7 +98,7 @@ client.on("message", message => {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setFooter('المطرقة Premium Bot:heart: جميع حقوق محفوظة لمطرقة')
-      .addField(' شكرا لاستخدمك مطرقة بوت ', `https://discordapp.com/oauth2/authorize?client_id=494572525708115968&permissions=8&scope=bot`)
+      .addField(' شكرا لاستخدمك مطرقة بوت ', `https://discordapp.com/oauth2/authorize?client_id=502919707070824462&permissions=8&scope=bot`)
   message.author.send({embed});
 
  }

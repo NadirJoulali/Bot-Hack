@@ -7,7 +7,7 @@ const jimp = require('jimp');
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Official bot -help`,"http://twitch.tv/Nadir44king")
+client.user.setGame(`Comming Soon V2.1`,"http://twitch.tv/Nadir44king")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')

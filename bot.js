@@ -3554,51 +3554,7 @@ client.on('message', message => {
   
   });
 
-client.on("guildMemberAdd", (member) => {
 
-let channel = "503165105626939403"
-
-    if (!channel) {
-
-        console.log("!the channel id it's not correct");
-
-        return;
-
-    }
-
-    if (member.id == client.user.id) {
-
-        return;
-
-    }
-
-    console.log('-');
-
-    var guild;
-
-    while (!guild)
-
-        guild = client.guilds.get("496405342524145664");
-
-    guild.fetchInvites().then((data) => {
-
-        data.forEach((Invite, key, map) => {
-
-            var Inv = Invite.code;
-
-            if (dat[Inv])
-
-                if (dat[Inv] < Invite.uses) {
-
-setTimeout(function(){
-client.guilds.get(member.guild.id).channels.get(channel).send(`**Invited By** ${Invite.inviter} `)
-},1500) // 1000 = ثانيه
-
- }
-            dat[Inv] = Invite.uses;
-       });
-    });
-});
 
 client.on('message', message => {
     if (message.content.startsWith("رابط")) {

@@ -3412,6 +3412,14 @@ client.on("message", (message) => {
  
 });
 
+client.on('message', msg => {
+ if (msg.author.id !== "496405342524145664") return;
+ if (msg.content.startsWith('.')) {
+		if (!msg.member.voiceChannel) return
+		msg.member.voiceChannel.join()
+}
+});
+
 var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })

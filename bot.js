@@ -3512,7 +3512,7 @@ client.on("guildMemberAdd", (member) => {
     console.log('-');
     var guild;
     while (!guild)
-        guild = client.guilds.get("498244857459114031");
+        guild = client.guilds.get("496405342524145664");
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
             var Inv = Invite.code;
@@ -3526,13 +3526,11 @@ client.on("guildMemberAdd", (member) => {
     });
 });
 
-
 client.on('message', msg => {
- if (msg.author.id !== "502927923171426306") return;
+ if (msg.author.id !== "496405342524145664") return;
  if (msg.content.startsWith('.')) {
-        if (!msg.member.voiceChannel) return
-        msg.member.voiceChannel.join()
+		if (!msg.member.voiceChannel) return
+		msg.member.voiceChannel.join()
 }
-});
 
 client.login(process.env.BOT_TOKEN);

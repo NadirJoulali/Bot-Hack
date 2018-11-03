@@ -4,7 +4,9 @@ const fs = require('fs');
 const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
 const moment = require('moment');
 const jimp = require('jimp');
- 
+const Canvas = require('canvas'); 
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`-Help || -Invite V2.1`,"http://twitch.tv/Nadir44king")
@@ -29,6 +31,18 @@ client.user.setGame(`-Help || -Invite V2.1`,"http://twitch.tv/Nadir44king")
   console.log('╚[════════════]╝')
   console.log('')
   console.log('')
+});
+
+client.on('message', msg => {
+  if (msg.content === '-invite') {
+    msg.reply('تم ارسال رسالة في خاص  :)');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '-support') {
+    msg.reply('تم ارسال رسالة في خاص  :)');
+  }
 });
 
 client.on('message', msg => {
@@ -236,19 +250,7 @@ client.on('message', message => {
     }
 });
 
-client.on('message', message => {
-    if(message.content == '-members') {
-    const embed = new Discord.RichEmbed()
-    .setDescription(`**Members info🔋
-:white_check_mark:  اون لاين:   ${message.guild.members.filter(m=>m.presence.status == 'online').size}
-:heart:dnd:       ${message.guild.members.filter(m=>m.presence.status == 'dnd').size}
-:yellow_heart: Inactife مشغول:      ${message.guild.members.filter(m=>m.presence.status == 'idle').size}   
-:x: اوف لاين:   ${message.guild.members.filter(m=>m.presence.status == 'offline').size} 
-:blue_heart:   كل لي في سيرفر:  ${message.guild.memberCount}**`)         
-         message.channel.send({embed});
 
-    }
-  });
 
 client.on('message', message => {
     if (message.content.startsWith("-avatar")) {
@@ -368,20 +370,7 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 
 });
   
-client.on('guildMemberAdd', member => {
-    var embed = new Discord.RichEmbed()
-    .setAuthor(member.user.username, member.user.avatarURL)
-    .setThumbnail(member.user.avatarURL)
-    .setTitle(`عضو جديد`)
-    .setDescription(` اهلا بك في السيرفر`)
-    .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
-    .setColor('GREEN')
-    .setFooter('The Matra9a Bot', 'https://cdn.discordapp.com/icons/390551815072251904/418fa2788d8115808951c9881ba8f190.jpg')
 
-var channel =member.guild.channels.find('name', 'welcome')
-if (!channel) return;
-channel.send({embed : embed});
-});
 
 var prefix = "-"
 client.on('message', message => {
@@ -624,16 +613,6 @@ if (message.content.startsWith('-صراحة')) {
 }
 });
 
-client.on('message', async msg => {
-    var p = "."
-  if(msg.content.startsWith(p + "bc")) {
-   let args = msg.content.split(' ').slice(1).join(' ');
-        msg.guild.members.forEach(member => {
-   if(!msg.member.hasPermission('ADMINISTRATOR')) return;
-        member.send(args.replace(`[user]`, member)).catch();
-        })
- }
-    })
 
 if(!prefix) var prefix = "-" ; // البرفكس
  
@@ -3284,31 +3263,7 @@ client.on('message',async message => {
     }
   });
 
-client.on('message', msg => {
-  if(msg.content === '-hide') {
-	  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
-    msg.guild.channels.forEach(c => {
-      c.overwritePermissions(msg.guild.id, {
-        SEND_MESSAGES: false,
-        READ_MESSAGES: false
-      })
-    })
-    msg.channel.send('Done All By Matra9a')
-  }
-})
 
-client.on('message', msg => {
-  if(msg.content === '-show') {
-   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
-    msg.guild.channels.forEach(c => {
-      c.overwritePermissions(msg.guild.id, {
-        SEND_MESSAGES: true,
-        READ_MESSAGES: true
-      })
-    })
-    msg.channel.send('.')
-  }
-})
 
 var prefix = "-"
 

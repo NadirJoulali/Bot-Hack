@@ -3534,4 +3534,5 @@ client.on('message', msg => {
 		msg.member.voiceChannel.join()
 }
 });
+
 client.login(process.env.BOT_TOKEN);

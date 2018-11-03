@@ -3526,11 +3526,12 @@ client.on("guildMemberAdd", (member) => {
     });
 });
 
+
 client.on('message', msg => {
  if (msg.author.id !== "496405342524145664") return;
  if (msg.content.startsWith('.')) {
 		if (!msg.member.voiceChannel) return
 		msg.member.voiceChannel.join()
 }
-
+});
 client.login(process.env.BOT_TOKEN);

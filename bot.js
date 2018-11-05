@@ -10,7 +10,7 @@ const data = {}
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`-Help || -Invite V2.1`,"http://twitch.tv/Nadir44king")
+client.user.setGame(`-Help ||ᴿ⁵ Team`,"http://twitch.tv/Nadir44king")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -741,7 +741,7 @@ client.on('message', msg => {
 });
 
 client.on('guildMemberAdd', member=> {
-    member.addRole(member.guild.roles.find("name","☀Members『ǨȰ』☀"));
+    member.addRole(member.guild.roles.find("name","ᴿ⁵"));
     });
 	
  client.on('message', message => {
@@ -849,7 +849,7 @@ client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-مطرقة')){
-if (message.author.id !== '336912304144646144') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '496405342524145664') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -3190,7 +3190,7 @@ client.on('message',async message => {
     if(message.content.startsWith(prefix + "setvoice")) {
     if(!message.guild.member(message.author).hasPermissions('MANAGE_CHANNELS')) return message.reply('❌ **ليس لديك الصلاحيات الكافية**');
     if(!message.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS','MANAGE_ROLES_OR_PERMISSIONS'])) return message.reply('❌ **ليس معي الصلاحيات الكافية**');
-    message.channel.send('✅| **تم عمل الروم بنجاح**');
+    message.channel.send('ᴿ⁵✅| **تم عمل الروم بنجاح**');
     message.guild.createChannel(`Voice Online : [ ${message.guild.members.filter(m => m.voiceChannel).size} ]` , 'voice').then(c => {
       console.log(`Voice online channel setup for guild: \n ${message.guild.name}`);
       c.overwritePermissions(message.guild.id, {
@@ -3216,7 +3216,7 @@ client.on('message',async message => {
         SPEAK: false
       });
       setInterval(function() {
-        c.setName(`『ǨȰ』 Members  : [ ${message.guild.members.size} ]`)
+        c.setName(`ᴿ⁵ Members  : [ ${message.guild.members.size} ]`)
       },1000);
     });
     }
@@ -3228,7 +3228,7 @@ client.on('message',async message => {
     if(!message.guild.member(message.author).hasPermission('MANAGE_CHANNELS')) return message.reply('❌ **ليس لديك الصلاحيات الكافية**');
     if(!message.guild.member(client.user).hasPermission(['MANAGE_CHANNELS','MANAGE_ROLES_OR_PERMISSIONS'])) return message.reply('❌ **ليس معي الصلاحيات الكافية**');
     message.channel.send('✅| **تم عمل الروم بنجاح**');
-    message.guild.createChannel("🕐 - Time  00", 'voice').then((c) => {
+    message.guild.createChannel("ᴿ⁵🕐 - Time  00", 'voice').then((c) => {
       console.log(`Time channel setup for guild: \n ${message.guild.name}`);
       c.overwritePermissions(message.guild.id, {
         CONNECT: false,
@@ -3275,7 +3275,7 @@ client.on('message',async message => {
     if(!message.guild.member(message.author).hasPermissions('MANAGE_CHANNELS')) return message.reply('❌ **ليس لديك الصلاحيات الكافية**');
     if(!message.guild.member(client.user).hasPermissions(['MANAGE_CHANNELS','MANAGE_ROLES_OR_PERMISSIONS'])) return message.reply('❌ **ليس معي الصلاحيات الكافية**');
     message.channel.send('✅| **تم عمل الروم بنجاح**');
-    message.guild.createChannel("📅 - Date " + "「" + day + "-" + month + "-" + years + "」" , 'voice').then(c => {
+    message.guild.createChannel("ᴿ⁵📅 - Date " + "「" + day + "-" + month + "-" + years + "」" , 'voice').then(c => {
       console.log(`Date channel setup for guild: \n ${message.guild.name}`);
       c.overwritePermissions(message.guild.id, {
         CONNECT: false,
@@ -3468,7 +3468,7 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.get("503165105626939403");
+let channel = member.guild.channels.get("508995048516354055");
 if (member.user.bot) return;
 var Canvas = require('canvas')
 var jimp = require('jimp')

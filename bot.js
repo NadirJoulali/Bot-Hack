@@ -10,7 +10,7 @@ const data = {}
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`-Help ||ᴿ⁵ Team`,"http://twitch.tv/Nadir44king")
+client.user.setGame(`ᴿ⁵ Team`,"http://twitch.tv/Nadir44king")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
